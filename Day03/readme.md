@@ -2,6 +2,8 @@
 
 Splunk for log analysis
 
+![splunkBanner](images/splunkBanner.png)
+
 ## Exploring the Logs
 
 We start a re-configured VM by clicking the Start Machine button and then connect to the Splunk SIEM by visiting **https://LAB_WEB_URL.p.thmlabs.com** in the browser.
@@ -9,6 +11,7 @@ We start a re-configured VM by clicking the Start Machine button and then connec
 In the Splunk instance, the data has been pre-ingested for us to investigate the incident. 
 
 ---
+
 ![splunk00](images/splunk00.png)
 
 On the Splunk interface, we click on **Search & Reporting** on the left panel, and then type **index=main** in the search bar to show all ingested logs.
@@ -43,3 +46,4 @@ The two datasets are as follows:
 ![slunk00](images/splunk00)
 ![slunk00](images/splunk00)
 ![slunk00](images/splunk00)
+
