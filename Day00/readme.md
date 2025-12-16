@@ -1,6 +1,6 @@
 # warming up for the Aoc
 
-![warmUP](images/warmUP.png)
+![warmUP](AdventOfCyber2025_THM/images/warmUP.png)
 
 ## Challenge 1: Password Pandemonium
 While login into my new TBFC workstation, an alert pops up: **“Weak passwords detected on 73 TBFC accounts!”**
@@ -122,5 +122,6 @@ User Agent strings like **“User Agent: BunnyOS/1.0 (HopSecBot)”**  in HTTP l
 Reading the provided web log entries comparing them to common browsers (Chrome, Firefox, Edge), Identifying and selecting the suspicious entry gives the flag.
 
 ![bunnyBrowser001c10](/images/bunnyBrowser001c1.png)
+
 
 
