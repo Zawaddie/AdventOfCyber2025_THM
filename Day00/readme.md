@@ -25,11 +25,11 @@ Checking suspicious files is a crucial skill for every defender. Thus the Object
 
 We run a simulated VirusTotal tool. The scan reports is 49 clean results, 1 malicious.
 
-![choco001c2](images/choco001c2.png)
+![choco001c2](/images/choco001c2.png)
 
 The **flag** was obtained by deciding that the file is not safe but malicious
 
-![choco002c2](images/choco002c2.png)
+![choco002c2](/images/choco002c2.png)
 
 ---
 
@@ -41,7 +41,7 @@ The objective here is to find and read the hidden welcome message inside your li
 
 We use **ls** to list files, **cd challenges/** to change directories and **cat welcome.txt** to read the text file which has the **flag.**
 
-![attackbox001c3](images/attackbox001c3.png)
+![attackbox001c3](/images/attackbox001c3.png)
 
 ---
 
@@ -54,7 +54,7 @@ The Objective is to find the hidden flag file using Windows commands.
 
 We Use **dir** to list visible files, Try **dir /a** to reveal hidden ones and **type hidden_flag.txt** to read the flag.
 
-![winCMD001c4](images/winCMD001c4.png)
+![winCMD001c4](/images/winCMD001c4.png)
 
 ---
 ## Challenge 5: Linux Lore
@@ -65,7 +65,7 @@ Here the Objective is to Locate McSkidy’s hidden message in his Linux home dir
 
 We use **cd /home/mcskidy/** to enter his folder, run **ls -la** to show all files and then Use **cat .secret_message** to reveal the flag.
 
-![linuxLore001c5](images/linuxLore001c5.png)
+![linuxLore001c5](/images/linuxLore001c5.png)
 
 ---
 
@@ -77,11 +77,11 @@ This challenge's objective is to check if McSkidy’s email has appeared in a br
 
 We thus enter **mcskidy@tbfc.com** into the breach checker, review results for each domain and then identify the one marked **“Compromised.”**
 
-![leak001c6](images/leak001c6.png)
+![leak001c6](/images/leak001c6.png)
 
 Clicking the compromised domain reveals the flag.
 
-![leak002c6](images/leak002c6.png)
+![leak002c6](/images/leak002c6.png)
 
 ---
 
@@ -122,6 +122,7 @@ User Agent strings like **“User Agent: BunnyOS/1.0 (HopSecBot)”**  in HTTP l
 Reading the provided web log entries comparing them to common browsers (Chrome, Firefox, Edge), Identifying and selecting the suspicious entry gives the flag.
 
 ![bunnyBrowser001c10](/images/bunnyBrowser001c1.png)
+
 
 
 
