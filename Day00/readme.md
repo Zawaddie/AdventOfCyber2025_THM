@@ -1,6 +1,6 @@
 # warming up for the Aoc
 
-![warmUP](AdventOfCyber2025_THM/images/warmUP.png)
+![warmUP](/images/warmUP.png)
 
 ## Challenge 1: Password Pandemonium
 While login into my new TBFC workstation, an alert pops up: **“Weak passwords detected on 73 TBFC accounts!”**
@@ -8,14 +8,14 @@ While login into my new TBFC workstation, an alert pops up: **“Weak passwords 
 Strong passwords are one of the simplest yet most effective defences against cyber attacks. 
 So the Objective of this challenge is  to **Create a password that passes all system checks and isn’t found in the leaked password list.**
 
-![pass001c1](images/pass001c1.png)
+![pass001c1](/images/pass001c1.png)
 
 The **challenge's flag** was obtained by following the below **good password hygene:**
 - Enter a password with at least 12 characters.
 - Include uppercase, lowercase, numbers, and symbols.
 - Ensure it isn’t in the breach database.
 
-![pass002c1](images/pass002c1.png)
+![pass002c1](/images/pass002c1.png)
 
 ---
 
@@ -122,6 +122,7 @@ User Agent strings like **“User Agent: BunnyOS/1.0 (HopSecBot)”**  in HTTP l
 Reading the provided web log entries comparing them to common browsers (Chrome, Firefox, Edge), Identifying and selecting the suspicious entry gives the flag.
 
 ![bunnyBrowser001c10](/images/bunnyBrowser001c1.png)
+
 
 
 
