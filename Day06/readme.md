@@ -27,7 +27,7 @@ This room focused on the safe and systematic analysis of a malicious sample usin
 
 The **static analysis phase** involved examining the malware sample without execution to gather early indicators of compromise. Using tools such as **PeStudio,** key information was extracted including file hashes for threat intelligence, embedded strings that revealed potential flags and network indicators, and imports that suggested how the malware interacts with the Windows operating system.
 
-**Dynamic analysis** was then performed to observe the malware’s real behavior during execution. **Regshot** was used to compare registry states before and after execution, allowing identification of registry modifications associated with persistence mechanisms. Process Monitor (ProcMon) was leveraged to monitor runtime activity such as file creation, registry access, and network communications. Filtering by process name and TCP operations helped isolate relevant events and identify the protocol used by the malware to communicate externally.
+**Dynamic analysis** was then performed to observe the malware’s real behavior during execution. **Regshot** was used to compare registry states before and after execution, allowing identification of registry modifications associated with persistence mechanisms. **Process Monitor (ProcMon)** was leveraged to monitor runtime activity such as file creation, registry access, and network communications. Filtering by process name and TCP operations helped isolate relevant events and identify the protocol used by the malware to communicate externally.
 
 Overall, this room demonstrated a practical workflow for malware analysis by combining static inspection with behavioral analysis. It reinforced best practices in malware handling, persistence detection, and network activity investigation, while highlighting how analysis results can be translated into actionable defensive insights.
 
@@ -54,3 +54,4 @@ Network activity analysis using process-level monitoring
 Safe handling of malicious samples in sandboxed environments
 
 Translating technical findings into defensive and detection insights
+
