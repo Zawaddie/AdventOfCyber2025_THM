@@ -55,3 +55,6 @@ Safe handling of malicious samples in sandboxed environments
 
 Translating technical findings into defensive and detection insights
 
+<img width="565" height="344" alt="image" src="https://github.com/user-attachments/assets/83c67f08-dd58-434b-a8ac-e2ab75d56180" />
+
+
