@@ -161,6 +161,9 @@ Steps
 
 The alert triggers every time, confirming stored XSS.
 
+<img width="1356" height="534" alt="image" src="https://github.com/user-attachments/assets/2253ae03-cf64-4f33-952b-7c5ccda6cf23" />
+
+
 ###  Protecting Against XSS
 
 Each service is different, and requires a well-thought-out, secure design and implementation plan, but key practices you can implement are:
@@ -190,5 +193,6 @@ Allow only safe HTML where required
 ### Wrap-Up
 
 The application is vulnerable to both Reflected and Stored XSS, explaining the suspicious payloads observed in the logs. The development team must now harden input handling to prevent future exploitation.
+
 
 
