@@ -113,11 +113,14 @@ List Running Containers
 docker ps
 ```
 
+<img width="1334" height="121" alt="image" src="https://github.com/user-attachments/assets/9586bcd6-fff8-4b9d-9412-63bdf8421332" />
+
 Main service:
 
 ``cpp
 http://MACHINE_IP:5001
 ```
+<img width="1359" height="567" alt="image" src="https://github.com/user-attachments/assets/40cf8bd6-75db-46db-9d94-da0cc7b5bf59" />
 
 ➡️ Website is defaced. Time to investigate backend containers.
 
@@ -147,6 +150,8 @@ docker ps
 
 ✔️ Successful execution confirms API access to Docker daemon
 
+<img width="1310" height="185" alt="image" src="https://github.com/user-attachments/assets/51dec35b-792c-4791-ba15-f7c5e2e3fb4c" />
+
 ---
 
 ## 🚀 Privileged Container Access
@@ -165,6 +170,9 @@ whoami
 
 ➡️ Privileged container confirmed
 
+<img width="964" height="87" alt="image" src="https://github.com/user-attachments/assets/3a8d7e3b-43ac-4f60-b650-9eef1b4a267b" />
+
+
 ---
 
 ## 🛠️ Service Recovery
@@ -175,6 +183,7 @@ Inside the deployer container:
 ```bash
 sudo /recovery_script.sh
 ```
+<img width="1339" height="206" alt="image" src="https://github.com/user-attachments/assets/677d5c6a-9d86-4c00-a046-67c474ea618e" />
 
 **Verify restoration**
 Refresh:
@@ -185,12 +194,15 @@ http://MACHINE_IP:5001
 
 ✔️ DoorDasher service restored
 
+
 🏁 Flag
 The flag is located in the root directory:
 
 ```bash
 cat /flag
 ```
+
+<img width="1266" height="98" alt="image" src="https://github.com/user-attachments/assets/8142000b-2332-4dcf-b429-236d452e5cdb" />
 
 
 ## ✅ Key Takeaways
@@ -202,4 +214,5 @@ cat /flag
 
 
 📂 Room completed — service restored and flag captured!
+
 
