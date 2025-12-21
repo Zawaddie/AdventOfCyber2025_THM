@@ -56,6 +56,7 @@ A YARA rule has three core sections:
 - **Condition** – Logic that determines a match
 
 ### Example Rule
+
 ```yara
 rule TBFC_KingMalhare_Trace
 {
@@ -73,3 +74,114 @@ rule TBFC_KingMalhare_Trace
         any of them
 }
 ```
+
+---
+
+## Strings in YARA
+
+### 1. Text Strings
+Simple words or phrases found in files or memory.
+
+```yara
+$xmas = "Christmas" nocase
+```
+
+**Common Modifiers**
+
+- `nocase` – Case-insensitive
+
+- `wide ascii` – Matches Unicode and ASCII
+
+- `xor` – Detects XOR-obfuscated strings
+
+-`base64 / base64wide` – Detects Base64-encoded content
+
+### 2. Hexadecimal Strings
+
+Used for raw byte patterns (e.g., file headers, shellcode).
+
+```yara
+$mz = { 4D 5A }   // PE file header
+```
+
+### 3. Regular Expressions
+
+Flexible matching for changing patterns (URLs, commands).
+
+```yara
+$url = /http:\/\/.*malhare.*/ nocase
+```
+
+⚠️ Regex is powerful but can slow scans if too broad.
+
+---
+
+### Conditions
+
+The condition section defines when a rule triggers.
+
+**Common Examples** 
+
+```yara
+$xmas                  // match one string
+any of them            // match any string
+all of them            // match all strings
+```
+
+**Logical Operators**
+```yara
+($s1 or $s2) and not $benign
+```
+
+**File Property Checks**
+
+```yara
+any of them and filesize < 700KB
+```
+
+### Practical Use Case: IcedID Detection
+
+TBFC analysts identified small IcedID loaders sharing:
+
+- PE (MZ) headers
+- Common binary fragments
+- Consistent file sizes
+
+**Detection Rule**
+```yara
+rule TBFC_Simple_MZ_Detect
+{
+    meta:
+        author = "TBFC SOC L2"
+        description = "IcedID Loader Detection"
+        date = "2025-10-10"
+        confidence = "low"
+
+    strings:
+        $mz   = { 4D 5A }
+        $hex1 = { 48 8B ?? ?? 48 89 }
+        $s1   = "malhare" nocase
+
+    condition:
+        all of them and filesize < 10MB
+}
+```
+
+### Running YARA
+
+```bash
+yara -r icedid_starter.yar C:\
+```
+
+
+**Useful Flags**
+
+- `-r`– Recursive directory scan
+
+- `-s` – Show matched strings
+
+### Summary
+
+YARA is a defender’s precision tool for detecting hidden threats through patterns, not names. By combining smart strings and logical conditions, analysts can uncover malware even when attackers attempt to hide it.
+
+➡️ Next step: create and test your own YARA rule.
