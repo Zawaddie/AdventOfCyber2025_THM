@@ -164,6 +164,9 @@ As email security improves, attackers shift tactics.
 
 Goal: **steal access**, not drop malware.
 
+<img width="1004" height="567" alt="image" src="https://github.com/user-attachments/assets/87e107a6-953f-40c0-8939-4ff484049f18" />
+
+
 ---
 
 ### Legitimate Services Abuse
@@ -224,6 +227,10 @@ By analysing **intent**, **sender identity**, **domains**, **attachments**, and 
 ## Task
 
 We Proceed to analyse the provided emails and identify phishing indicators.
+
+<img width="1355" height="684" alt="image" src="https://github.com/user-attachments/assets/450d3e18-cadd-4f54-8961-bfa49f6289ae" />
+
+
 
 
 
