@@ -94,7 +94,7 @@ $xmas = "Christmas" nocase
 
 - `xor` – Detects XOR-obfuscated strings
 
--`base64 / base64wide` – Detects Base64-encoded content
+- `base64 / base64wide` – Detects Base64-encoded content
 
 ### 2. Hexadecimal Strings
 
@@ -185,3 +185,8 @@ yara -r icedid_starter.yar C:\
 YARA is a defender’s precision tool for detecting hidden threats through patterns, not names. By combining smart strings and logical conditions, analysts can uncover malware even when attackers attempt to hide it.
 
 ➡️ Next step: create and test your own YARA rule.
+
+<img width="681" height="557" alt="image" src="https://github.com/user-attachments/assets/13bd0da5-c7fe-4f4a-9897-1caca60c173a" />
+
+
+
