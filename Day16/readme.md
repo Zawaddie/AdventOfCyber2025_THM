@@ -158,6 +158,9 @@ Stores:
 
 * Open **Registry Explorer** from the taskbar
 
+<img width="798" height="613" alt="image" src="https://github.com/user-attachments/assets/3d78b9e6-f520-460b-ba1c-35567ed89cbe" />
+
+
 ---
 
 ### Step 2: Load Registry Hives
@@ -227,4 +230,5 @@ If you enjoyed this room, check out:
 ---
 
 🧾 *Registry analysis provides powerful insight into attacker behavior and persistence mechanisms when performed correctly and offline.*
+
 
