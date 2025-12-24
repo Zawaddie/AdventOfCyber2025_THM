@@ -2,9 +2,6 @@
 Learn what the Windows Registry is and how to investigate it.
 
 ---
-Below is a **well-structured, concise, and professional Markdown write-up** formatted for a **TryHackMe (THM) GitHub repository**. It’s organized for **readability, forensics relevance, and easy reference**, with unnecessary narrative trimmed while preserving learning value.
-
----
 
 # 🪟 Windows Registry — Fundamentals & Forensics
 
@@ -230,5 +227,6 @@ If you enjoyed this room, check out:
 ---
 
 🧾 *Registry analysis provides powerful insight into attacker behavior and persistence mechanisms when performed correctly and offline.*
+
 
 
